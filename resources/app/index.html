@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Casey</title>
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ultra' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Stint+Ultra+Expanded' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Slabo+13px' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="style.min.css">
+   	<script src="jquery.js"></script>
+   	
+  </head>
+  <body>
+  	<div class="background"></div>
+  	<div class="status-bar">
+  		<span class="logo">
+			<img src="img/dudeman.png">
+  		</span>
+
+  		<span class="minimize" id="minimize">
+			<svg id="svg2" viewBox="0 0 10 3.0000001" height="3" width="10">
+			  <g transform="translate(-106.64286,-1017.0051)" id="layer1">
+			    <rect y="980.93365" x="107.14286" height="55.714287" width="45.714298" id="rect3336" style="fill:#ffffff;fill-rule:evenodd;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+			  </g>
+			</svg>
+
+  		</span>
+  		<span class="maximize" id="maximize">
+			<svg id="svg2" viewBox="0 0 15 10" height="10" width="15">
+			  <g transform="translate(-106.64286,-1010.0051)" id="layer1">
+			    <rect y="1010.12" x="100.36" height="2.77" width="46.49" id="rect3336" style="fill-rule:evenodd;fill:#fff;stroke-width:0.23;stroke:#fff"/>
+			    <rect transform="matrix(0,1,-1,0,0,0)" y="-109.53" x="1000.17" height="2.77" width="46.49" id="rect3336-0" style="fill-rule:evenodd;fill:#fff;stroke-width:0.23;stroke:#fff"/>
+			    <rect transform="matrix(0,1,-1,0,0,0)" y="-121.53" x="997.9" height="2.77" width="46.49" id="rect3336-0-9" style="fill-rule:evenodd;fill:#fff;stroke-width:0.23;stroke:#fff"/>
+			    <rect y="1017.12" x="93.76" height="2.77" width="46.49" id="rect3336-4" style="fill-rule:evenodd;fill:#fff;stroke-width:0.23;stroke:#fff"/>
+			  </g>
+			</svg>
+  		</span>
+  		<span class="fullscreen" id="fullscreen">
+			<svg height="15px" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="15px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Layer_1"/><g id="fullscreen"><g><polygon points="27.414,24.586 22.828,20 20,22.828 24.586,27.414 20,32 32,32 32,20   " style="fill:#ffffff;"/><polygon points="12,0 0,0 0,12 4.586,7.414 9.129,11.953 11.957,9.125 7.414,4.586   " style="fill:#ffffff;"/><polygon points="12,22.828 9.172,20 4.586,24.586 0,20 0,32 12,32 7.414,27.414   " style="fill:#ffffff;"/><polygon points="32,0 20,0 24.586,4.586 20.043,9.125 22.871,11.953 27.414,7.414 32,12   " style="fill:#ffffff;"/></g></g></svg>
+  		</span>
+  		<span class="close" id="close">
+  			<svg enable-background="new 0 0 24 24" height="24px" id="Layer_1" version="1.1" viewBox="0 0 24 24" width="24px" xml:space="preserve"><path d="M22.245,4.015c0.313,0.313,0.313,0.826,0,1.139l-6.276,6.27c-0.313,0.312-0.313,0.826,0,1.14l6.273,6.272  c0.313,0.313,0.313,0.826,0,1.14l-2.285,2.277c-0.314,0.312-0.828,0.312-1.142,0l-6.271-6.271c-0.313-0.313-0.828-0.313-1.141,0  l-6.276,6.267c-0.313,0.313-0.828,0.313-1.141,0l-2.282-2.28c-0.313-0.313-0.313-0.826,0-1.14l6.278-6.269  c0.313-0.312,0.313-0.826,0-1.14L1.709,5.147c-0.314-0.313-0.314-0.827,0-1.14l2.284-2.278C4.308,1.417,4.821,1.417,5.135,1.73  L11.405,8c0.314,0.314,0.828,0.314,1.141,0.001l6.276-6.267c0.312-0.312,0.826-0.312,1.141,0L22.245,4.015z"/></svg>
+  		</span>
+  		<span class="status-bar-controls"></span>
+  	</div>
+  	<span class="status-menu-controls"></span>
+  	<div class="status-menu">
+  		<span class="file" id="file">File</span>
+  		<span class="edit" id="edit">Edit</span>
+  		<span class="help" id="edit">Help</span>
+  	</div>
+  	<div class="container">
+  		<div>
+		    <h1><strong>Casey Morris</strong><br> Is Really<br><strong>Awesome</strong></h1>
+		    <hr>
+		    <!--We are using io.js <script>document.write(process.version)</script>
+		    and Electron <script>document.write(process.versions['electron'])</script>.-->
+		    <h4><span>Sed accumsan tellus eget arcu semper lacinia a pretium lectus. </span>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus dignissim commodo felis, vel ultrices risus sodales eget. Praesent aliquet ipsum justo, ut viverra ligula lobortis id. Nunc sed mi id eros euismod condimentum et et nunc. Fusce a eros quis ligula congue sodales. Vestibulum faucibus, mauris in consectetur auctor, magna erat sodales nisl, ut suscipit elit mi nec sem.</h4>
+		</div>
+	</div>
+	<script>
+		var fs = require("fs");
+		var ipc = require('ipc');
+		// COMPILE LIBRARIES //
+		var jade = require('jade');
+		var shell = require('shelljs');
+		var csswring = require('csswring');
+		var chokidar = require('chokidar');
+		var sass = require('node-sass');
+
+		chokidar.watch('resources/app', {ignored: /[\/\\]\./}).on('change', function(event, path) {
+			var path = require('path');
+			var ext = path.extname(event);
+			var filename = path.basename(event);
+			var base = path.basename(event, ext);
+			console.log("Base: " + base);
+			var secondbase = path.basename(base, '.min');
+			console.log('Second base: ' + secondbase);
+			if (base == secondbase) {
+				switch(ext) {
+					case '.css':
+						var css = fs.readFileSync('resources/app/' + filename, 'utf8');
+						fs.writeFileSync('resources/app/' + base + '.min.css', csswring.wring(css).css);
+						ipc.send('reload');
+						break;
+					case '.jade':
+						shell.cd('resources/app');
+						shell.mkdir('something');
+						shell.exec('jade test.jade', {async: true}, function(code, output) {
+							ipc.send('reload');
+						});
+						break;
+					case '.html':
+						ipc.send('reload');
+						break;
+					case '.styl':
+						shell.cd('resources/app');
+						shell.mkdir('something');
+						shell.exec('stylus test.styl', {async: true}, function(code, output) {
+							ipc.send('reload');
+						});
+				}
+			}
+			
+		});
+
+		var closeBtn = document.getElementById('close');
+		closeBtn.addEventListener('click', function() {
+			ipc.send('close-window');
+		});
+
+		var minimizeBtn = document.getElementById('minimize');
+		minimizeBtn.addEventListener('click', function() {
+			ipc.send('min-window');
+		});
+
+		var maximizeBtn = document.getElementById('maximize');
+		maximizeBtn.addEventListener('click', function() {
+			ipc.send('max-window');
+		});
+
+		var fullBtn = document.getElementById('fullscreen');
+		fullBtn.addEventListener('click', function() {
+			ipc.send('kiosk-window');
+		});
+  	</script>
+  	<script>
+		var remote = require('remote');
+		var Menu = remote.require('menu');
+		var MenuItem = remote.require('menu-item');
+
+		var menu = new Menu();
+		menu.append(new MenuItem({ 
+			label: 'Exit',
+			sublabel: 'Close The Application',
+			click: function() { ipc.send('close-window'); }
+			
+		}));
+		var fileBtn = document.getElementById('file');
+		fileBtn.addEventListener('click', function (e) {
+		  e.preventDefault();
+		  menu.popup(remote.getCurrentWindow());
+		}, false);
+	</script>
+  </body>
+</html>
